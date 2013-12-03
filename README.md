@@ -3,7 +3,6 @@ forcem.js
 
 a content placeholder toolkit
 
-
 Include `forcem.js` towards the end of the body tag.
 
 	<script src="forcem.js" type="text/javascript"></script>
