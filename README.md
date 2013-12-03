@@ -27,4 +27,5 @@ Set elements class to `ipsum`. Use class `p-#` for paragraphs or `l-#` for lists
 
 ### Images
 Set w-# and h-# for width and height.
+
 	<img class="ipsum w-200 h-100"/>
