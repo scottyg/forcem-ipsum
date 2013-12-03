@@ -1,23 +1,38 @@
-forcem.js
-=========
+`forcem.js`
+[Setup](#setup)
+[Options](#options)
+[Usage](#usage)
+[Example Code](#example)
 
-a content placeholder toolkit
+---
+
+<a name="setup"/>
+# Setup
 
 Include `forcem.js` towards the end of the body tag.
 
-The basic set up defaults to `.forcem`using episode 4 and planets in lists
+### Basic 
 
 	forcem();
 	
-Heres and example of an advanced set up
+### Advanced
 
 	forcem({
-		class: forcem,
-		episode: 4, //Allowed 4 - 6
-		list: 'characters' //Allowed 'characters', 'planets'
+		class: 'forcem',
+		episode: 4,
+		list: 'characters'
 	});
-	
-## Usage
+<a name="options"/>
+# Options
+
+| Option    | Description                            | Default   |
+| --------- | -------------------------------------- | --------- |
+| class     | Main class for forcem elements         | 'forcem'  |
+| episode   | Star Wars epsidode #, episodes 4 - 6   | 4         |
+| list      | List type: 'characters' or 'planets'   | 'planets' |
+
+<a name="usage"/>
+# Usage
 
 Set elements class to `forcem`. Use class `p-#` for paragraphs or `li-#` for lists where # is the number of paragraphs or list items you want displayed.
 
@@ -32,7 +47,8 @@ Set `w-#` and `h-#` for width and height.
 
 	<img class="forcem w-200 h-100"/>
 
-## Example
+<a name="example"/>
+# Example Code
 
 	<html>
 	<head>
