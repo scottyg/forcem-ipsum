@@ -6,6 +6,7 @@ a content placeholder toolkit
 ## Usage
 
 Include `forcem.js` and the end of the body tag.
+
 	<script src="forcem.js" type="text/javascript"></script>
 	<script>
 		forcem();
