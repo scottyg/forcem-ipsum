@@ -33,7 +33,6 @@ Set `w-#` and `h-#` for width and height.
 	<img class="forcem w-200 h-100"/>
 
 ## Example
-A full example
 
 	<html>
 	<head>
