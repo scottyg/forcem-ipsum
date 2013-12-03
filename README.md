@@ -31,3 +31,25 @@ Set elements class to `forcem`. Use class `p-#` for paragraphs or `li-#` for lis
 Set `w-#` and `h-#` for width and height.
 
 	<img class="forcem w-200 h-100"/>
+
+## Example
+A full example
+
+	<html>
+	<head>
+		<title>forcem.js</title>
+	</head>
+	<body>
+		<div class="forcem p-6"></div>
+		<ul class="forcem li-4"></ul>
+		<img class="forcem w-200 h-100"/>
+		<script src="forcem.js" type="text/javascript"></script>
+		<script>
+			forcem({
+				class: 'forcem',
+				episode: 4,
+				list: 'planets'
+			});
+		</script>
+	</body>
+	</html>
