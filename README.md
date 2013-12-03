@@ -1,7 +1,6 @@
-`forcem.js`
-[Setup](#setup)
-[Options](#options)
-[Usage](#usage)
+[Setup](#setup) |
+[Options](#options) |
+[Usage](#usage) |
 [Example Code](#example)
 
 ---
