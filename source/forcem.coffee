@@ -34,6 +34,7 @@ forcem = (options) ->
 		classes = el[i].className
 		c = classes.split(" ")
 		output = tmpList = ""
+		
 		#
 		# Paragraph
 		#
@@ -46,9 +47,10 @@ forcem = (options) ->
 			else tmpEl = rotj  if options.episode is 6
 			max = tmpEl.length
 			while count > 0
-				output = output + "<p>" + tmpEl[Math.floor((Math.random() * max) + 1)] + "</p>"
+				output = output + "<p>" + tmpEl[Math.randomRange(0, max)] + "</p>"
 				count--
 			el[i].innerHTML = output
+			
 		#
 		# Lists
 		#
@@ -59,9 +61,10 @@ forcem = (options) ->
 			else tmpList = li_planets  if options.list is "planets"
 			max = tmpList.length
 			while count > 0
-				output = output + "<li>" + tmpList[Math.floor((Math.random() * max) + 1)] + "</li>"
+				output = output + "<li>" + tmpList[Math.randomRange(0, max)] + "</li>"
 				count--
 			el[i].innerHTML = output
+			
 		#
 		# Images
 		#
@@ -71,3 +74,10 @@ forcem = (options) ->
 			el[i].style.height = c[2].replace("h-", "") + "px"
 		i++
 	return output
+Math.randomRange = (min, max) ->
+	if min and max
+		return (min + Math.floor(Math.random() * (max - min + 1)))
+	else if min
+		return (Math.floor(Math.random() * min + 1))
+	else
+		return (Math.floor(Math.random() * 101))
