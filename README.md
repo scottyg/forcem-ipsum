@@ -6,9 +6,11 @@ a content placeholder toolkit
 Include `forcem.js` towards the end of the body tag.
 
 The basic set up defaults to `.forcem`using episode 4 and planets in lists
+
 	forcem();
 	
-The advanced set up is 
+Heres and example of an advanced set up
+
 	forcem({
 		class: forcem,
 		episode: 4, //Allowed 4 - 6
