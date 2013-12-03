@@ -26,6 +26,6 @@ Set elements class to `ipsum`. Use class `p-#` for paragraphs or `l-#` for lists
 	<ul class="ipsum l-5"></ul>
 
 ### Images
-Set w-# and h-# for width and height.
+Set `w-#` and `h-#` for width and height.
 
 	<img class="ipsum w-200 h-100"/>
