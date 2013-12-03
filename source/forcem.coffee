@@ -1,10 +1,16 @@
 #
 # forcem.js v1.2 https://github.com/scottyg/forcem.js
 #
-forcem = (options = {class: 'forcem',episode: 4,list: 'planets'}) ->
+forcem = (options) ->
 	
 	#
-	# Define element
+	# Default Options
+	#
+	if !options
+		options = { "class": 'forcem', episode: 4,list: 'planets' }
+	
+	#
+	# Define Element
 	#
 	el = document.getElementsByClassName(options.class)
 	
