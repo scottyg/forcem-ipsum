@@ -21,7 +21,6 @@ Heres and example of an advanced set up
 
 Set elements class to `forcem`. Use class `p-#` for paragraphs or `li-#` for lists where # is the number of paragraphs or list items you want displayed.
 
-## Examples
 ### Paragraphs
 	<div class="forcem p-5"></div>
 
