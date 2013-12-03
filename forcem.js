@@ -37,8 +37,8 @@ function forcem(options){
 				count--;
 			}
 			ipsum[i].innerHTML = output;
-	    }else if(c[1].indexOf("l-")>-1){
-		    count =  parseInt(c[1].replace("l-", ""));
+	    }else if(c[1].indexOf("li-")>-1){
+		    count =  parseInt(c[1].replace("li-", ""));
 	
 			if(options["list"]=="characters"){
 				tempList = li_char;

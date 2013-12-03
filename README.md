@@ -16,14 +16,14 @@ Include `forcem.js` towards the end of the body tag.
 
 ## Usage
 
-Set elements class to `ipsum`. Use class `p-#` for paragraphs or `l-#` for lists where # is the number of paragraphs or list items you want displayed.
+Set elements class to `ipsum`. Use class `p-#` for paragraphs or `li-#` for lists where # is the number of paragraphs or list items you want displayed.
 
 ## Examples
 ### Paragraphs
 	<div class="ipsum p-5"></div>
 
 ### Lists
-	<ul class="ipsum l-5"></ul>
+	<ul class="ipsum li-5"></ul>
 
 ### Images
 Set `w-#` and `h-#` for width and height.
