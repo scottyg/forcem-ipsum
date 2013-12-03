@@ -5,14 +5,18 @@ a content placeholder toolkit
 
 ### Usage
 
-	<div class="ipsum p-5 e-4"></div>
-	
-	<ul class="ipsum l-5 planets"></ul>
-	<ul class="ipsum l-10 characters"></ul>
-	
-	<img class="ipsum w-200 h-100"/>
-	
+Include `forcem.js` and the end of the <body> tag.
 	<script src="forcem.js" type="text/javascript"></script>
 	<script>
 		forcem();
 	</script>
+
+Paragraphs
+	<div class="ipsum p-5 e-4"></div>
+
+Lists
+	<ul class="ipsum l-5 planets"></ul>
+	<ul class="ipsum l-10 characters"></ul>
+
+Images
+	<img class="ipsum w-200 h-100"/>
