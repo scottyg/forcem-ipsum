@@ -1,12 +1,13 @@
 [Setup](#setup) |
 [Options](#options) |
 [Usage](#usage) |
-[Example Code](#example)
+[Example](#example)
 
 ---
 
 <a name="setup"/>
 # Setup
+## HTML
 
 Include `forcem.js` towards the end of the body tag.
 
@@ -21,6 +22,10 @@ Include `forcem.js` towards the end of the body tag.
 		episode: 4,
 		list: 'characters'
 	});
+
+## Photoshop
+Place `forcem.js` into your Photoshop scripts folder. Restart Photoshop if it is running.
+
 <a name="options"/>
 # Options
 
@@ -33,6 +38,7 @@ Include `forcem.js` towards the end of the body tag.
 <a name="usage"/>
 # Usage
 
+## HTML
 Set elements class to `forcem`. Use class `p-#` for paragraphs or `li-#` for lists where # is the number of paragraphs or list items you want displayed.
 
 ### Paragraphs
@@ -46,8 +52,14 @@ Set `w-#` and `h-#` for width and height.
 
 	<img class="forcem w-200 h-100"/>
 
+## Photoshop
+- Open document in Photoshop.
+- Create New Layer
+- Create Text Layer
+- Select `File -> Script -> forcem` from the menu
+
 <a name="example"/>
-# Example Code
+# HTML Example
 
 	<html>
 	<head>
