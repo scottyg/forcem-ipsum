@@ -24,10 +24,10 @@ Include `forcem.js` towards the end of the body tag.
 	});
 
 ## Photoshop
-Place `forcem.js` into your Photoshop scripts folder. Restart Photoshop if it is running.
+Place the `.jsx` files from `/photoshop` into your Photoshop scripts folder. Restart Photoshop if it is running.
 
 <a name="options"/>
-# Options
+# HTML Options
 
 | Option    | Description                            | Default   |
 | --------- | -------------------------------------- | --------- |

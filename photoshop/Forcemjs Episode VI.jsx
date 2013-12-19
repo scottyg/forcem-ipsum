@@ -13,66 +13,6 @@ li_planets = ["Abregado-rae", "Agamar", "Alderaan", "Almania", "Alzoc III", "Amb
 
 li_char = ["Admiral Ackbar", "Wedge Antilles", "Bodo Baas", "Ponda Baba / Dr. Evazan", "Barada", "Bollux / Blue Max", "Bossk", "C-3PO / R2-D2", "Callista", "Lando Calrissian", "Gaeriel Captison", "Joruus C'baoth", "Chewbacca", "Queen Mother Ta'a Chume", "Salacious Crumb", "Admiral Daala", "Figrin D'an (and his band)", "Biggs Darklighter", "Dengar", "Teneniel Djo", "General Jan Dodonna", "Moruth Doole", "Dorsk 81", "Kyp Durron", "Emperor's Royal Guards", "Davin Felth", "Boba Fett", "Borsk Fey'lya", "Bib Fortuna", "4-LOM", "Gallandro", "Yarna D'al' Gargan", "Garindan", "Gartogg", "Gethzerion", "Greedo", "Hethrir", "Garm Bel Iblis", "IG-88", "Roganda Ismaren / Irek Ismaren", "Prince Isolder", "Jabba the Hutt (Jabba Desilijic Tiure)", "Mara Jade", "Dannik Jerriko", "Tenel Ka", "Kabe", "Muftak", "Talon Karrde", "Ken", "Obi-Wan Kenobi", "Khabarakh", "Princess Kneesaa", "Exar Kun", "Labria", "Owen Lars / Beru Lars", "Lobot", "Lowbacca", "General Crix Madine", "Nichos Marr", "Ephant Mon", "Mon Mothma", "Momaw Nadon", "Shug Ninx", "Het Nkik", "Nien Nunb", "Oola", "Emperor Palpatine", "Captain Gilad Pellaeon", "Ulic Qel-Droma", "The Max Rebo Band (Max Rebo / Droopy McCool / Sy Snootles)", "Ree-Yees", "Rillao", "Elder Sh'tk'ith (Bluescale)", "Dev Sibwarra", "Lak Sivrak", "Luke Skywalker", "Anakin Solo", "Han Solo", "Jacen Solo / Jaina Solo", "Leia Organa Solo", "Mako Spince", "Nomi Sunrider", "Grand Moff Tarkin", "Tessek", "Pter Thanas", "Grand Admiral Thrawn", "Tigris", "Tionne", "Brea Tonnika / Senni Tonnika", "Cindel Towani", "Triclops", "Tusken Raiders", "Darth Vader", "Lady Valarian", "Vima-Da-Boda", "Weequay", "Wicket W. Warrick", "Winter", "Qwi Xux", "Yoda", "Salla Zend", "Zuckuss"];
 
-forcem = function(options) {
-  var c, classes, count, el, i, max, output, tmpEl, tmpList, type;
-  if (!options) {
-    options = {
-      "class": 'forcem',
-      episode: 4,
-      list: 'planets'
-    };
-  }
-  el = document.getElementsByClassName(options["class"]);
-  count = type = output = tmpList = max = classes = c = "";
-  i = 0;
-  while (i < el.length) {
-    classes = el[i].className;
-    c = classes.split(" ");
-    output = tmpList = "";
-    if (c[1].indexOf("p-") > -1) {
-      count = parseInt(c[1].replace("p-", ""));
-      if (options.episode === 4) {
-        tmpEl = e4;
-      } else if (options.episode === 5) {
-        tmpEl = e5;
-      } else {
-        if (options.episode === 6) {
-          tmpEl = e6;
-        }
-      }
-      max = tmpEl.length;
-      while (count > 0) {
-        output = output + "<p>" + tmpEl[Math.randomRange(0, max)] + "</p>";
-        count--;
-      }
-      el[i].innerHTML = output;
-    }
-    if (c[1].indexOf("li-") > -1) {
-      count = parseInt(c[1].replace("li-", ""));
-      if (options.list === "characters") {
-        tmpList = li_char;
-      } else {
-        if (options.list === "planets") {
-          tmpList = li_planets;
-        }
-      }
-      max = tmpList.length;
-      while (count > 0) {
-        output = output + "<li>" + tmpList[Math.randomRange(0, max)] + "</li>";
-        count--;
-      }
-      el[i].innerHTML = output;
-    }
-    if (c[1].indexOf("w-") > -1 && c[2].indexOf("h-") > -1) {
-      el[i].src = image_1;
-      el[i].style.width = c[1].replace("w-", "") + "px";
-      el[i].style.height = c[2].replace("h-", "") + "px";
-    }
-    i++;
-  }
-  return output;
-};
-
 Math.randomRange = function(min, max) {
   if (min && max) {
     return min + Math.floor(Math.random() * (max - min + 1));
@@ -82,3 +22,33 @@ Math.randomRange = function(min, max) {
     return Math.floor(Math.random() * 101);
   }
 };
+
+forcem_PS = function() {
+  var al, doc, episode, max, output, ti, tmpEl;
+  doc = app.activeDocument;
+  al = doc.activeLayer;
+  episode = 6;
+  if (episode === 4) {
+    tmpEl = e4;
+  } else if (episode === 5) {
+    tmpEl = e5;
+  } else if (episode === 6) {
+    tmpEl = e6;
+  }
+  max = tmpEl.length;
+  output = tmpEl[Math.floor(Math.random() * (max + 1))] + "\r\r";
+  if (al.kind === LayerKind.TEXT) {
+    ti = al.textItem;
+    ti.contents = ti.contents + output;
+  }
+  return ti.contents;
+};
+
+if (typeof app === "undefined") {
+  app = null;
+  LayerKind = null;
+} else {
+  if (app.activeDocument) {
+    forcem_PS();
+  }
+}
