@@ -56,7 +56,7 @@ Set `w-#` and `h-#` for width and height.
 - Open document in Photoshop.
 - Create New Layer
 - Create Text Layer
-- Select `File -> Script -> forcem` from the menu
+- Select `File -> Script -> Forcemjs Episode *` from the menu
 
 <a name="example"/>
 # HTML Example
