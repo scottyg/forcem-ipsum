@@ -46,7 +46,3 @@
   else
     window.forcem = forcem;
 })();
-
-
-
-module.exports = forcem;
