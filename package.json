@@ -1,6 +1,6 @@
 {
   "name": "forcem-ipsum",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "A Star Wars themed dummy text generator",
   "main": "forcem.js",
   "scripts": {
