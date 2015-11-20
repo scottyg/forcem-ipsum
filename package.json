@@ -1,6 +1,6 @@
 {
   "name": "forcem-ipsum",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "description": "A Star Wars themed dummy text generator",
   "main": "forcem.js",
   "scripts": {
@@ -22,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/scottyg/ForcemJS/issues"
   },
-  "homepage": "https://github.com/scottyg/ForcemJS#readme"
+  "homepage": "http://forcemipsum.com"
 }
