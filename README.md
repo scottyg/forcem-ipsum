@@ -1,6 +1,6 @@
 # Forcem Ipsum
-## a Star Wars dummy text generator
+## the Star Wars text generator
 
-Use [forcemipsum.com](http://forcemipsum.com)
+Use [forcemipsum.com](https://forcemipsum.com)
 
 Or download the JavaScript file and incorporate it into your preferred workflow.
