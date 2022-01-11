@@ -243,6 +243,8 @@
           output.push(randomOut(content.episode.five));
         } else if (option == "e6" || option == "episode6" || option == "episode 6") {
           output.push(randomOut(content.episode.six));
+        } else if (option == "e7" || option == "episode7" || option == "episode 7") {
+          output.push(randomOut(content.episode.seven));
         } else if (option == "planets" || option == "places") {
           output.push(content.planets[i]);
         } else if (option == "characters" || option == "people") {
