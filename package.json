@@ -1,7 +1,7 @@
 {
   "name": "forcem-ipsum",
   "version": "1.7.3",
-  "description": "A Star Wars themed dummy text generator",
+  "description": "the Star Wars text generator",
   "main": "forcem.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,10 +17,10 @@
     "text",
     "generator"
   ],
-  "author": "Scott Gordon <me@scottyg.net> (https://iamscottyg.com)",
+  "author": "Scott Gordon <me@scottyg.net> (https://scottyg.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/scottyg/ForcemJS/issues"
   },
-  "homepage": "http://forcemipsum.com"
+  "homepage": "https://forcemipsum.com"
 }
