@@ -8,19 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scottyg/ForcemJS.git"
+    "url": "git+https://github.com/scottyg/forcem-ipsum.git"
   },
   "keywords": [
     "star",
     "wars",
-    "dummy",
     "text",
     "generator"
   ],
   "author": "Scott Gordon <me@scottyg.net> (https://scottyg.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottyg/ForcemJS/issues"
+    "url": "https://github.com/scottyg/forcem-ipsum/issues"
   },
   "homepage": "https://forcemipsum.com"
 }
