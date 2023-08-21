@@ -234,8 +234,8 @@
             "Zuckuss",
           ],
         };
-      content.planets.sort(function () { return 0.5 - Math.random() });
-      content.characters.sort(function () { return 0.5 - Math.random() });
+      content.planets.sort(function () { return 0.5 - Math.random(); });
+      content.characters.sort(function () { return 0.5 - Math.random(); });
       if (!option) {
         option = "e4";
       }
@@ -244,19 +244,19 @@
       }
       for (let i = 0; i < limit; i++) {
         if (option.includes("1")) {
-          output.push(random(content.episode.one, i));
+          output.push(randomOut(content.episode.one, i));
         } else if (option.includes("4")) {
-          output.push(random(content.episode.four, i));
+          output.push(randomOut(content.episode.four, i));
         } else if (option.includes("5")) {
-          output.push(random(content.episode.five, i));
+          output.push(randomOut(content.episode.five, i));
         } else if (option.includes("6")) {
-          output.push(random(content.episode.six, i));
+          output.push(randomOut(content.episode.six, i));
         } else if (option.includes("7")) {
-          output.push(random(content.episode.seven, i));
+          output.push(randomOut(content.episode.seven, i));
         } else if (option.includes("8")) {
-          output.push(random(content.episode.eight, i));
+          output.push(randomOut(content.episode.eight, i));
         } else if (option.includes("9")) {
-          output.push(random(content.episode.nine, i));
+          output.push(randomOut(content.episode.nine, i));
         } else if (option == "planets" || option == "places") {
           output.push(content.planets[i]);
         } else if (option == "characters" || option == "people") {
@@ -265,7 +265,7 @@
       }
       return output;
     };
-    function randomOut(episode) {
+    function randomOut(episode, i) {
       episode = episode.replaceAll(". ", ".[]");
       episode = episode.split("[]");
       var out = "";

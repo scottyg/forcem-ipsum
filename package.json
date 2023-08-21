@@ -4,7 +4,8 @@
   "description": "the Star Wars text generator",
   "main": "forcem.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint forcem.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/scottyg/forcem-ipsum/issues"
   },
-  "homepage": "https://forcemipsum.com"
+  "homepage": "https://forcemipsum.com",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "jest": "^29.6.3"
+  }
 }
