@@ -5,7 +5,7 @@
   "main": "forcem.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint forcem.js"
+    "lint": "eslint forcem.js forcem.test.js"
   },
   "repository": {
     "type": "git",
