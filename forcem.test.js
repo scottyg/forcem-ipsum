@@ -5,6 +5,14 @@ describe("ForcemIpsum", () => {
     const output = "Captain. Yes, sir? Tell them we wish to board at once.";
     expect(forcem("1", 5)[0]).toContain(output);
   });
+  test("Episode 2", () => {
+    const output = "Senator, we're making our final approach into Coruscant.";
+    expect(forcem("2", 5)[0]).toContain(output);
+  });
+  test("Episode 3", () => {
+    const output = "Lock on to him, R2. Master, General Grievous's ship is directly ahead Master,";
+    expect(forcem("3", 5)[0]).toContain(output);
+  });
   test("Episode 4", () => {
     const output = "Did you hear that? They've shut down the main reactor.";
     expect(forcem("4", 5)[0]).toContain(output);
